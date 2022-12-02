@@ -1,0 +1,35 @@
+.error {  
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: red;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+  }
+
+.login-wrapper {
+    display: flex;
+    align-content: center;    
+    justify-content: center;
+    padding-top: 61px;
+}
+
+.form-elements {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-elements > label {
+    flex: 1;
+    margin: 5px;
+}
+
+.form-elements > input {
+    flex: 2;
+    margin: 5px;
+}
+
+.login-submit{
+    float: right;
+}

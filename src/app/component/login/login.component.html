@@ -1,0 +1,32 @@
+<div class="error" *ngIf="error">Login Failed. Try again.</div>
+<div class="login-wrapper">
+    <form (ngSubmit)="onSubmit()">
+        <input
+            type="hidden"
+            name="token"
+            [(ngModel)]="token"
+            id="token"
+        />
+        <div class="form-elements">
+            <label for="text">Username</label>
+            <input
+            type="text"
+            name="username"
+            [(ngModel)]="username"
+            id="username"
+            placeholder="Username"
+            />
+        </div>
+        <div class="form-elements">
+            <label for="day">Password</label>
+            <input
+            type="password"
+            name="password"
+            [(ngModel)]="password"
+            id="password"
+            placeholder="Password"
+            />
+        </div>
+        <input type="submit" value="Login" class="login-submit" />
+    </form>
+</div>
